@@ -9,7 +9,7 @@ def index():
 @app.route('/process_data', methods=['POST'])
 def process_data():
     data = request.json
-    # Faça alguma lógica com os dados recebidos do frontend
+
     result = {'message': 'Dados recebidos com sucesso!', 'data': data}
     return jsonify(result)
 
